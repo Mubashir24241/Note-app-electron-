@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    width: 800px;
+    height: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .sidebar {
+    width: 30%;
+    padding: 10px;
+    background: #f0f0f0;
+    overflow-y: auto;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+  }
+  
+  #note-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #note-list li {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  #note-list li:hover {
+    background: #ddd;
+  }
+  
+  .main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  #note-textarea {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #save-btn {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
